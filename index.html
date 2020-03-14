@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		h1{color:blue; font-family:verdana;  }
+		body{background-image: url("carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg"); background-repeat: no-repeat;background-attachment: fixed;background-size: cover;}
+		#myHeader{padding:3px;color:blue;background-image: url("anas-alshanti-feXpdV001o4-unsplash.jpg");text-align: center; font-family: algerian;font-size: "10";}
+		#author{font-family: italics;color:purple;text-align: center;}
+		#one{font-family: verdana;colour:purple;text-allign: center;}
+		.center { margin: 0 auto; width: 400px; }
+		/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+	</style>
+	</head>
+	<body>
+		<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">HOME</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">ABOUT ME</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h3 id="myHeader">PROJECT DESCRIPTION</h3>
+  <div style="background-color:grey;text-align: center;">
+  <p id="one"><b><u>Combating the spread of pests in Kenya(Locust).</u></b><br>Locust have in the recent past made their way to Kenya from Somalia and are destroying livelihoods of the farmers.My project seeks to come up with measures to deal with the menace and to prevent more damage from the swarm which might lead to hunger in the country.</br><br><b><u>Disease Control-COVID 19.</u></b><br>COVID-19 is a disease caused by a newly identified coronavirus called SARS-CoV-2.It has been diagnosed in multiple locations worldwide and has since become a pandemic.My project seeks to 
+  track it's spread and try to come up with measures to prevent more spreading.</b></p>
+</div>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3 id="myHeader">PERSONAL DETAILS</h3>
+  <div style="background-color:grey;text-align: center;">
+  <p><b>NAME:DANTON CHERUIYOT</b><br><b>REGISTRATION NO:ENC222-0119/2017</b><br><b>COURSE:BSc. GEOSPATIAL INFORMATION SCIENCE</b><br><b>SCHOOL:JOMO KENYATTA UNIVERSITY OF AGRICULTURE AND TECHNOLOGY<b><br></p>
+  </div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+<div class="center">
+<video width="400" controls>
+	<source src="The Vamps - Rest Your Love.mp4" type="video/mp4">
+	</video>
+</div>
+<form action="/action_page.php" style="text-align: center;">
+  <label for="lname" style="color:blue">Comment:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+<p id="author">Created by:richie_danton</p>
+	</body>	
+</html>
+
